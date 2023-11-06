@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+    
+*{
+    scroll-behavior: smooth;
+    text-decoration: none !important;
+  }
+  .bg-img{
+    opacity: 0.1;
+    z-index: -2;
+  }
+
+  .frame{
+    min-height: calc(100vh - 4em);
+  }
+
+.wrong:checked[type=checkbox] {
+    background-image: url(./cross-svgrepo-com.svg) !important;
+    background-color: #dc3545 !important;
+    border-color: #f1aeb5 !important;
+}
+
+.custom_color1{
+    background-color: #052c65 !important;
+}
+
+.right:checked[type=checkbox] {   
+    background-color: #198754 !important;
+    border-color: #a3cfbb !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    border: none;
+    border-bottom: 1px dashed #052c65 !important;
+    box-shadow: none !important;
+}
+
+
+.accordion-button:focus {  
+    box-shadow: none !important;
+    border: none !important;
+}
+
+</style>
+<body class=" bg-body-secondary min-vh-100 d-flex flex-column row-gap-2" onload="Q1Reload()">
+    <nav class="navbar navbar-expand-lg shadow-sm bg-light-subtle px-3 py-1 position-sticky top-0 z-1 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary-emphasis fw-bold" href="#">Our Enviroment</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end w-100 border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header py-1 w-100">
+                    <div class=" d-flex align-items-center column-gap-2">
+                        <img src="./Dagon-one.svg.png" width="50px" alt="" srcset=""> <h5 class="text-primary-emphasis m-0 fw-bold">Our Enviroment</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-light-subtle d-lg-flex justify-content-center ">
+                    <ul class="navbar-nav  align-items-md-center justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary-emphasis"  aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Lesson</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Exercise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Help</a>
+                        </li>
+                  </ul>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion accordion-flush container my-2 justify-content-center col-11 col-md-8 card border shadow-sm p-0 overflow-hidden" id="accordionFlushExample" >
+        <div class="accordion-item">
+          <h2 class="accordion-header ">
+            <div class="accordion-button collapsed px-3 py-3 text-primary-emphasis fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Answered 0 Question (completed 0%)
+            </div>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-2">
+                <div class="row row-gap-2 bg-secondary bg-opacity-10 rounded-2 col-12 mx-auto">
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Question1.html" class="p-1 bg-white shadow-sm d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 1</a>
+                    </div>
+                    
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Question2.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 2</a>
+                    </div>
+            
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Question3.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 3</a>
+                    </div>
+
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Question4.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 4</a>
+                    </div>
+
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Question5.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 5</a>
+                    </div>
+
+                    <div class="col-lg col-sm-4 col-6 p-2">
+                        <a href="./Result.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Total Result</a>
+                    </div>
+            
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <!-- <div class="container frame d-flex flex-column col-12 px-md-5 p-3 row-gap-2 " id="gallery" style="scroll-margin-block-start: 70px;">
+
+        <h4 class="fw-semibold text-primary-emphasis text-center h-auto  m-0">Our Enviroment</h4>
+
+        <h5 class="fw-semibold text-primary text-center h-auto m-0">Talking About Our Enviroment </h5>
+        
+    </div> -->
+
+    <h5 class="fw-semibold text-primary-emphasis text-center h-auto m-0">Talking About Our Enviroment (Exercise No - 1) </h5>
+
+    <!-- 1a -->
+    <div class="container frame d-flex flex-column justify-content-center col-12 px-md-5 px-sm-2 row-gap-2 pb-5 " id="Q1" style="scroll-margin-block-start: 70px;">
+       
+       
+        <div class="card shadow row mx-auto col-12 row-gap-2 border p-1 p-sm-3">
+            <div class="col-12  p-0 row mx-auto p-1 rounded-2">
+                <h6 class="fw-semibold text-primary-emphasis h-auto m-0 col-12 p-2"> <span class="text-primary">1a</span> <span class="ps-2">Look at the pictures and tick 
+                    <input class="form-check-input border-primary border-2 p-2" checked disabled style="float: none !important; margin: 0;" type="checkbox" > 
+                    the thing you can see in nature</span> </h6>
+                <!-- air -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 bg-primary-subtle rounded-top-2 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="flexCheckDefault">
+                            <span class="text-primary fw-bolder fs-5">A</span> &nbsp;air
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="flexCheckDefault">
+                        </div> 
+                        <img src="./Img for eng/fresh air2.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- bacteria -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="bacteria">
+                            <span class="text-primary fw-bolder fs-5">B</span> &nbsp;bacteria
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="bacteria">
+                        </div>                   
+                        <img src="./Img for eng/bacteria.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- mangroves -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="mangroves">
+                            <span class="text-primary fw-bolder fs-5">C</span> &nbsp;mangroves
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="mangroves">
+                        </div>                   
+                        <img src="./Img for eng/mangroves4b.png" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- rocks -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="rocks">
+                            <span class="text-primary fw-bolder fs-5">D</span> &nbsp;rocks
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="rocks">
+                        </div>                   
+                        <img src="./Img for eng/rock1b.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- soil -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="soil">
+                            <span class="text-primary fw-bolder fs-5">E</span> &nbsp;soil
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="soil">
+                        </div>                   
+                        <img src="./Img for eng/soil3b.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- trees -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="trees">
+                            <span class="text-primary fw-bolder fs-5">E</span> &nbsp;trees
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="trees">
+                        </div>                   
+                        <img src="./Img for eng/treesb.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- volcanos -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="volcano">
+                            <span class="text-primary fw-bolder fs-5">E</span> &nbsp;volcano
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="volcano">
+                        </div>                   
+                        <img src="./Img for eng/volcano7b.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <!-- wildlife -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-sm-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border-body-subtle row-gap-2 col-12" >
+                        <div class="form-check d-flex align-items-center bg-primary-subtle rounded-1 column-gap-2 px-2">
+                            <label class="form-check-label m-0" for="wildlife">
+                            <span class="text-primary fw-bolder fs-5">E</span> &nbsp;wildlife
+                            </label>
+                            <input class="q1a form-check-input border-primary border-2 p-2" style="float: none !important; margin: 0;" type="checkbox" value="" id="wildlife">
+                        </div>                   
+                        <img src="./Img for eng/wildlifeb.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                    </div>
+                </div>
+
+                <div class="m-0 p-2 d-flex justify-content-md-between justify-content-center flex-wrap row-gap-3">
+                    <button type="button" id="btnQ1a" class="btn btn-primary col-md-2  col-12" onclick="SavetoQues1aResult()">Submit</button>
+                    <div class="d-flex justify-content-md-end column-gap-2  text-primary-emphasis fw-bold bg-primary-subtle px-3 py-2 rounded align-items-center">
+                        <span>Marks : </span>
+                        <span id="Q1Amark"> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!-- 1b -->
+    <div class="container frame d-flex flex-column col-12 px-md-5 px-sm-2 row-gap-2 py-3 " id="gallery" style="scroll-margin-block-start: 70px;">
+        <!-- <h5 class="fw-semibold text-primary text-center h-auto m-0">Talking About Our Enviroment (Exercise No - 1b) </h5> -->
+       
+        <div class="card shadow row mx-auto col-12 row-gap-2 border p-3 p-sm-4">
+          
+                <h6 class="fw-semibold text-primary-emphasis h-auto m-0 col-12 p-2 d-flex"> <span class="text-primary">1b</span> <span class="ps-2">
+                    Fill each blank with the most appropriate word in <a href="#Q1" style="text-decoration: none;">Exercise 1a</a>
+                </span></h6>
+
+                <!-- 1 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        1. <p class="ps-2 pe-1 m-0 " style="text-align: justify;">  When a __________ erupts, it forces red hot ashes, gases, rocks, etc. out of the opening at the top.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl1" placeholder="Type your answer">
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        2. <p class="ps-2 pe-1 m-0 " style="text-align: justify;">  Nowadays, safari parks around the world are designed to look like the natural environment for __________ to move around freely.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl2" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               
+                <!-- 3 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        3. <p class="ps-2 pe-1 m-0 " style="text-align: justify;">  We need to improve the quality of __________ by using natural fertilizers.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl3" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               
+                <!-- 4 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        4. <p class="ps-2 pe-1 m-0 " style="text-align: justify;"> We cannot see __________ which are the cause of many diseases, such as pneumonia and tuberculosis.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl4" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               <!-- 5 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        5. <p class="ps-2 pe-1 m-0 " style="text-align: justify;"> When we were at Ngapali, we took group photos before the big black __________ on the
+                        seashore.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl5" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               <!-- 6 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        6. <p class="ps-2 pe-1 m-0 " style="text-align: justify;"> We cannot see __________ but we can prove that it has weight and pressure.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl6" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               
+               <!-- 7 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        7. <p class="ps-2 pe-1 m-0 " style="text-align: justify;"> Our boat turned into the narrow river, and we could clearly see the roots of __________ along the riverbanks.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl7" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               <!-- 8 -->
+                <div class="row mx-auto bg-primary-subtle col-12 gallery-item p-2 rounded">
+                    <div class="col-lg-9 col-md-8 col-12 p-1 d-flex text-primary-emphasis fw-semibold">
+                        8. <p class="ps-2 pe-1 m-0 " style="text-align: justify;"> We get wood, shelter, and oxygen from, __________ </p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 p-1">
+                        <input type="text" class="form-control" id="bl8" placeholder="Type your answer">
+                    </div>
+                </div>
+
+               
+
+                <div class="m-0 py-2 px-0 col-12  d-flex justify-content-md-between justify-content-center flex-wrap row-gap-3">
+                    <button type="button" id="btnQ1B" class="btn btn-primary col-md-2  col-12" onclick="SavetoQues1BResult()">Submit</button>
+                    <div class="d-flex column-gap-2 justify-content-md-end text-primary-emphasis fw-bold bg-primary-subtle px-3 py-2 rounded align-items-center">
+                        <span>Mark : </span>
+                        <span id="Q1bmark"> 0</span>
+                    </div>
+                </div>          
+                        
+        </div>
+    </div>
+
+    <div class="container row mx-auto px-md-5 px-sm-2 mb-5 ">
+        <div class="card col-12 mx-auto row p-2">
+            <div class="row mx-auto p-2 my-0 bg-body-secondary">
+                <div class="row mx-auto justify-content-between row-gap-2 p-0">                    
+                    <h6 class="fw-semibold d-flex align-items-center w-auto m-0 p-0 column-gap-2"> Your total mark for question No.(1) =  <span class="rounded-2 py-2 px-4 bg-success bg-opacity-25 text-primary-emphasis" id="Q1result"> 0</span></h6>
+                    <a href="./Question2.html" class="btn btn-warning col-12 col-md-2 fw-semibold">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+    
+*{
+    scroll-behavior: smooth;
+    text-decoration: none !important;
+  }
+  .bg-img{
+    opacity: 0.1;
+    z-index: -2;
+  }
+
+  .frame{
+    min-height: calc(100vh - 4em);
+  }
+
+.wrong:checked[type=checkbox] {
+    background-image: url(./cross-svgrepo-com.svg) !important;
+    background-color: #dc3545 !important;
+    border-color: #f1aeb5 !important;
+}
+
+.custom_color1{
+    background-color: #052c65 !important;
+}
+
+.right:checked[type=checkbox] {   
+    background-color: #198754 !important;
+    border-color: #a3cfbb !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    border: none;
+    border-bottom: 1px dashed #052c65 !important;
+    box-shadow: none !important;
+}
+
+
+.accordion-button:focus {  
+    box-shadow: none !important;
+    border: none !important;
+}
+
+</style>
+<body class=" bg-body-secondary min-vh-100 d-flex flex-column row-gap-2" onload="Q2Reload()">
+    <nav class="navbar navbar-expand-lg shadow-sm bg-light-subtle px-3 py-1 position-sticky top-0 z-1 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary-emphasis fw-bold" href="#">Our Enviroment</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end w-100 border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header py-1 w-100">
+                    <div class=" d-flex align-items-center column-gap-2">
+                        <img src="./Dagon-one.svg.png" width="50px" alt="" srcset=""> <h5 class="text-primary-emphasis m-0 fw-bold">Our Enviroment</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-light-subtle d-lg-flex justify-content-center ">
+                    <ul class="navbar-nav  align-items-md-center justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary-emphasis"  aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Lesson</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Exercise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary-emphasis"  href="#">Help</a>
+                        </li>
+                  </ul>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion accordion-flush container my-2 justify-content-center col-11 col-md-8 card border shadow-sm p-0 overflow-hidden" id="accordionFlushExample" >
+        <div class="accordion-item">
+            <h2 class="accordion-header ">
+                <div class="accordion-button collapsed lh-lg p-2 px-3 text-primary-emphasis fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Answered 0 Question (completed 0%)
+                </div>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body p-2">
+                    <div class="row bg-secondary bg-opacity-10 rounded-2 col-12 mx-auto">
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Question1.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 1</a>
+                        </div>
+                        
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Question2.html" class="p-1 bg-white shadow-sm d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 2</a>
+                        </div>
+                
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Question3.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 3</a>
+                        </div>
+
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Question4.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 4</a>
+                        </div>
+
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Question5.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Question - 5</a>
+                        </div>
+
+                        <div class="col-lg col-sm-4 col-6 p-2">
+                            <a href="./Result.html" class="p-1 d-block text-center text-primary-emphasis fw-bold rounded-4 ">Total Result</a>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div> 
+
+    <h5 class="fw-semibold text-primary-emphasis text-center h-auto m-0">Talking About Our Enviroment (Exercise No - 2) </h5>
+
+    <!-- 2a -->
+    <div class="container d-flex flex-column justify-content-center col-12 px-md-5 px-sm-2 row-gap-2 mb-3" id="Q2" style="scroll-margin-block-start: 70px;">
+     
+        <div class="card shadow-sm row mx-auto col-12 row-gap-2 border p-1 p-sm-3">
+            <div class="col-12 bg-secondary bg-opacity-10 p-0 row mx-auto p-1 rounded-2">
+                <h6 class="fw-semibold text-primary-emphasis h-auto m-0 col-12 p-2 d-flex"> <span class="text-primary">2a.</span> <span class="ps-2">
+                    What do you see in the picture? </span>
+                </h6>
+
+                <!-- atmosphere -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                        <img src="./Img for eng/ex2/science-earth-atmosphere-illustration_1308-39291.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                        <div class="form-check d-flex align-items-center p-0">
+                            <input type="text" class="form-control w-100 m-0" id="Q2A-1" placeholder="Type your answer">                            
+                        </div> 
+                    </div>
+                </div>
+
+                
+                <!-- photosynthesis -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                        <img src="./Img for eng/ex2/Photosynthesis_en.svg.png" class="card-img-top w-100 rounded-1" alt="...">
+                        <div class="form-check d-flex align-items-center p-0">
+                            <input type="text" class="form-control w-100 m-0" id="Q2A-2" placeholder="Type your answer">                            
+                        </div> 
+                    </div>
+                </div>
+                
+                <!-- plant -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                        <img src="./Img for eng/ex2/house-plants.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                        <div class="form-check d-flex align-items-center p-0">
+                            <input type="text" class="form-control w-100 m-0" id="Q2A-3" placeholder="Type your answer">                            
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- sun -->
+                <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                    <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                        <img src="./Img for eng/ex2/10572938-3x2-940x627.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                        <div class="form-check d-flex align-items-center p-0">
+                            <input type="text" class="form-control w-100 m-0" id="Q2A-4" placeholder="Type your answer">                            
+                        </div> 
+                    </div>
+                </div>
+
+                
+                
+
+                <div class="m-0 p-2 d-flex justify-content-md-between justify-content-center flex-wrap row-gap-3">
+                    <button type="button" id="btnQ2A" class="btn btn-primary col-md-2  col-12" onclick="SavetoQues2AResult()">Submit</button>
+                    <div class="d-flex justify-content-md-end text-primary-emphasis fw-bold bg-primary-subtle px-3 py-2 column-gap-2 rounded align-items-center">
+                        <span>Mark : </span>
+                        <span id="Q2Amark"> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!-- 2b -->
+    <div class="container frame d-flex flex-column col-12 px-md-5 px-sm-2 row-gap-2 py-5 " id="gallery" style="scroll-margin-block-start: 70px;">
+        <!-- <h5 class="fw-semibold text-primary text-center h-auto m-0">Talking About Our Enviroment (Exercise No - 2b) </h5> -->
+       
+        <div class="card shadow-sm row mx-auto col-12 row-gap-2 border p-3 p-sm-4">
+          
+                <h6 class="fw-semibold text-primary-emphasis h-auto m-0 col-12 p-2 d-flex"> <span class="text-primary">2b.</span> <span class="ps-2">
+                    Listen to a speaker talking about the environment. Number the pictures in the order you hear them.
+                </span></h6>
+
+                <audio src="./Lesson aid/8.Unit 6  Lesson 1  Track 12  Ex 2B(1).mp3" controls></audio>
+
+                <!-- 1 -->
+                <div class="col-12 bg-secondary bg-opacity-10 p-0 row mx-auto p-1 rounded-2">
+                        
+                    <!-- atmosphere -->
+                    <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                        <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                            <img src="./Img for eng/ex2/science-earth-atmosphere-illustration_1308-39291.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                            <div class="form-check d-flex align-items-center p-0">
+                                <select class="choice form-select form-select-sm shadow-sm d-inline w-100 fs-6 " id="Q2b-1" aria-label="Large select example">
+                                    <option value="">Choose the number</option>
+                                    <option value="1" class="">1</option>
+                                    <option value="2" class="">2</option>
+                                    <option value="3" class="">3</option>
+                                    <option value="4" class="">4</option>
+                                                        
+                                </select>                           
+                            </div> 
+                        </div>
+                    </div>
+    
+                    
+                    <!-- photosynthesis -->
+                    <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                        <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                            <img src="./Img for eng/ex2/Photosynthesis_en.svg.png" class="card-img-top w-100 rounded-1" alt="...">
+                            <div class="form-check d-flex align-items-center p-0">
+                                <select class="choice form-select form-select-sm shadow-sm d-inline w-100 fs-6 " id="Q2b-2" aria-label="Large select example">
+                                    <option value="">Choose the number</option>
+                                    <option value="1" class="">1</option>
+                                    <option value="2" class="">2</option>
+                                    <option value="3" class="">3</option>
+                                    <option value="4" class="">4</option>
+                                                        
+                                </select>                          
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <!-- plant -->
+                    <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                        <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                            <img src="./Img for eng/ex2/house-plants.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                            <div class="form-check d-flex align-items-center p-0">
+                                <select class="choice form-select form-select-sm shadow-sm d-inline w-100 fs-6 " id="Q2b-3" aria-label="Large select example">
+                                    <option value="">Choose the number</option>
+                                    <option value="1" class="">1</option>
+                                    <option value="2" class="">2</option>
+                                    <option value="3" class="">3</option>
+                                    <option value="4" class="">4</option>
+                                                        
+                                </select>                         
+                            </div> 
+                        </div>
+                    </div>
+    
+                    <!-- plant -->
+                    <div class="col-lg-3 col-md-6 row mx-auto col-12 gallery-item p-2">
+                        <div class="card p-2 shadow-sm border row-gap-2 col-12" >
+                            <img src="./Img for eng/ex2/10572938-3x2-940x627.jpg" class="card-img-top w-100 rounded-1" alt="...">
+                            <div class="form-check d-flex align-items-center p-0">
+                                <select class="choice form-select form-select-sm shadow-sm d-inline w-100 fs-6 " id="Q2b-4" aria-label="Large select example">
+                                    <option value="">Choose the number</option>
+                                    <option value="1" class="">1</option>
+                                    <option value="2" class="">2</option>
+                                    <option value="3" class="">3</option>
+                                    <option value="4" class="">4</option>
+                                                        
+                                </select>                          
+                            </div> 
+                        </div>
+                    </div>
+    
+                </div>
+                
+
+                <div class="m-0 py-2 px-0 col-12  d-flex justify-content-md-between justify-content-center flex-wrap row-gap-3">
+                    <button type="button" id="btnQ2B" class="btn btn-primary col-md-2  col-12" onclick="SavetoQues2BResult()">Submit</button>
+                    <div class="d-flex  justify-content-md-end text-primary-emphasis fw-bold bg-primary-subtle px-3 py-2 column-gap-2 rounded align-items-center">
+                        <span>Mark : </span>
+                        <span id="Q2Bmark"> 0</span>
+                    </div>
+                </div>          
+                        
+        </div>
+    </div>
+
+    <div class="container row mx-auto px-md-5 px-sm-2 mb-5 ">
+        <div class="card col-12 mx-auto row p-2">
+            <div class="row mx-auto row-gap-2 p-2 my-0 bg-body-secondary">
+                <h6 class="fw-semibold d-flex align-items-center w-auto m-0 p-0 column-gap-2"> Your total mark for question No.(2) : <span class="rounded-2 py-2 px-4 bg-success bg-opacity-25 text-primary-emphasis" id="Q2result"> 0</span></h6>
+                <div class="row mx-auto justify-content-between row-gap-2 p-0">                    
+                    <a href="./Question1.html" class="btn btn-warning col-12 col-md-2 fw-semibold">Prev</a>
+                    <a href="./Question3.html" class="btn btn-warning col-12 col-md-2 fw-semibold">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./main.js"></script>
+</html>
