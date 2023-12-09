@@ -1,0 +1,21 @@
+{
+    "name": "Ten Mini Projects",
+    "short_name": "Ten Mini Projects",
+    "description": "Ten Mini Projects",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "/image_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/image_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
